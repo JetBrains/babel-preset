@@ -7,5 +7,7 @@ a plugin `babel-plugin-transform-proto-to-assign` (in order to support IE9 and I
 and finally `babel-plugin-add-module-exports` (for a babel5-style `module.exports` hack).
 
 ### `babel-runtime`
-Note that `babel-plugin-transform-proto-to-assign` and `babel-plugin-transform-runtime` doesn't work correctly together,
-so we need to use our very own patched version of `babel-runtime` package on our projects with Babel 6 (as well as Babel 5 though).
+Note that `babel-plugin-transform-class-properties` doesn't work correctly along with
+`babel-plugin-transform-proto-to-assign` and `babel-plugin-transform-runtime`,
+so we need to use our very own patched version of `babel-runtime` package
+on our projects with Babel 6 (as well as Babel 5 though).

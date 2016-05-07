@@ -12,9 +12,9 @@ module.exports = {
     require("babel-plugin-transform-object-rest-spread"),
 
     // stage-1
-    require("babel-plugin-transform-class-constructor-call"),
+    //require("babel-plugin-transform-class-constructor-call"), // deprecated
     require("babel-plugin-transform-class-properties"),
-    require("babel-plugin-transform-decorators"),
+    //require("babel-plugin-transform-decorators"), // disabled
     require("babel-plugin-transform-export-extensions"),
 
     // stage-0
@@ -27,7 +27,7 @@ module.exports = {
     require("babel-plugin-transform-es2015-function-name"),
     require("babel-plugin-transform-es2015-arrow-functions"),
     require("babel-plugin-transform-es2015-block-scoped-functions"),
-    [require("babel-plugin-transform-es2015-classes"), { loose: true }],
+    [require("babel-plugin-transform-es2015-classes"), { loose: true }], // loose-mode needs to support an inheritance in IE
     require("babel-plugin-transform-es2015-object-super"),
     require("babel-plugin-transform-es2015-shorthand-properties"),
     require("babel-plugin-transform-es2015-duplicate-keys"),
@@ -46,8 +46,8 @@ module.exports = {
 
     // react
     require("babel-plugin-transform-react-jsx"),
-    require("babel-plugin-transform-flow-strip-types"),
-    require("babel-plugin-syntax-flow"),
+    //require("babel-plugin-transform-flow-strip-types"),
+    //require("babel-plugin-syntax-flow"),
     require("babel-plugin-syntax-jsx"),
     require("babel-plugin-transform-react-display-name"),
 
