@@ -52,7 +52,6 @@ module.exports = {
     require("babel-plugin-transform-react-display-name"),
 
     // < IE11
-    require("babel-plugin-transform-runtime"),
     require("babel-plugin-transform-proto-to-assign")
   ]
 };
