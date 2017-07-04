@@ -1,19 +1,17 @@
 {
-  "name": "babel-preset-jetbrains",
+  "name": "@jetbrains/babel-preset-jetbrains",
   "version": "1.0.0",
   "description": "JetBrains preset for Babel",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "<internal-git-host>/jetbrains-babel-preset.git"
-  },
-  "publishConfig": {
-    "registry": "<internal-npm-publish-repo>"
+    "url": "git@github.com:JetBrains/babel-preset.git"
   },
   "keywords": [
-    "babel"
+    "babel",
+    "babel-preset"
   ],
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "dependencies": {
     "babel-plugin-transform-strict-mode": "6.24.1",
     "babel-preset-es2015": "6.24.1",
