@@ -1,5 +1,7 @@
 # JetBrains preset for Babel 6
 
+[![official JetBrains project](http://jb.gg/badges/official-flat-square.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
 This preset includes all plugins from the [official](https://babeljs.io/docs/plugins/#presets-official-presets) presets
 `es2015-17`, `stage-2`, `react`,
 and one extra plugin:
