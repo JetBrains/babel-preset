@@ -7,6 +7,6 @@ module.exports = {
     require('babel-preset-stage-2')
   ],
   plugins: [
-    require("babel-plugin-transform-strict-mode")
+    require('babel-plugin-transform-strict-mode')
   ]
 };
