@@ -20,7 +20,6 @@ module.exports = function preset(api, opts) {
       require('@babel/plugin-transform-strict-mode'),
 
       // Non-standard transformations
-      require('@babel/plugin-proposal-object-rest-spread'),
       require('@babel/plugin-proposal-class-properties'),
       require('@babel/plugin-proposal-optional-chaining'),
 
