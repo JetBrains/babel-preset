@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/JetBrains/babel-preset/compare/v2.0.1...v2.1.0) (2018-09-11)
+
+
+### Features
+
+* **[publish]:** pass "useBuiltIns" option to preset-env ([cfc75a6](https://github.com/JetBrains/babel-preset/commit/cfc75a6))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/JetBrains/babel-preset/compare/v1.1.3...v2.0.1) (2018-09-10)
 
