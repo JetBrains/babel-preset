@@ -14,7 +14,7 @@ module.exports = function preset(api, opts) {
       [require('@babel/preset-env'), {
         useBuiltIns,
         include: angularSupport
-          ? ['transform-parameters'] // This fixes issue with transforming Angular code like `constructor(...args)`
+          ? ['transform-parameters'] // This fixes an issue with transforming Angular code like `constructor(...args)`
           : []
       }]
     ],
@@ -26,8 +26,8 @@ module.exports = function preset(api, opts) {
       require('@babel/plugin-proposal-optional-chaining'),
 
       /*
-      By unknown reason preset-env doesn't transform rest spread like `const foo = {...bar.foo, test: 123}`
-      Probably because of this issuehttps://github.com/babel/babel/issues/7215
+      For an unknown reason preset-env doesn't transform rest spread, e.g. `const foo = {...bar.foo, test: 123}`
+      Probably because of this issue: https://github.com/babel/babel/issues/7215
        */
       require('@babel/plugin-proposal-object-rest-spread'),
 
