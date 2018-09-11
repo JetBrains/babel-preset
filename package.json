@@ -20,6 +20,7 @@
     "@babel/plugin-transform-strict-mode": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
     "babel-plugin-angularjs-annotate": "0.9.0"
   },
   "peerDependencies": {

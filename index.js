@@ -1,15 +1,18 @@
+/* eslint-disable complexity */
 const MIN_BABEL_VERSION = 7;
 
 module.exports = function preset(api, opts) {
   api.assertVersion(MIN_BABEL_VERSION);
 
   const transformRuntime = opts.transformRuntime || false;
+  const useBuiltIns = opts.useBuiltIns || false;
   const angularSupport = opts.angular || false;
 
   return {
     presets: [
       require('@babel/preset-react'),
       [require('@babel/preset-env'), {
+        useBuiltIns,
         include: angularSupport
           ? ['transform-parameters'] // This fixes issue with transforming Angular code like `constructor(...args)`
           : []
