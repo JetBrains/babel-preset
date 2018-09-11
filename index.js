@@ -10,7 +10,6 @@ module.exports = function preset(api, opts) {
     presets: [
       require('@babel/preset-react'),
       [require('@babel/preset-env'), {
-        modules: false, // Enables Webpack treeshaking
         include: angularSupport
           ? ['transform-parameters'] // This fixes issue with transforming Angular code like `constructor(...args)`
           : []
