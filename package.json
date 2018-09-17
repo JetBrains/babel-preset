@@ -1,6 +1,6 @@
 {
   "name": "@jetbrains/babel-preset-jetbrains",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "JetBrains preset for Babel",
   "main": "index.js",
   "repository": {
