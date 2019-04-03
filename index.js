@@ -7,12 +7,14 @@ module.exports = function preset(api, opts) {
   const transformRuntime = opts.transformRuntime || false;
   const useBuiltIns = opts.useBuiltIns || false;
   const angularSupport = opts.angular || false;
+  const corejs = opts.corejs || '2';
 
   return {
     presets: [
       require('@babel/preset-react'),
       [require('@babel/preset-env'), {
         useBuiltIns,
+        corejs,
         include: angularSupport
           ? ['transform-parameters'] // This fixes an issue with transforming Angular code like `constructor(...args)`
           : []
