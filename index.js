@@ -11,16 +11,21 @@ module.exports = function preset(api, opts) {
   const angularSupport = opts.angular || false;
   const corejs = opts.corejs || '2';
 
+  const envConfig = {
+    useBuiltIns,
+    include: angularSupport
+      ? [...defaultAlwaysOnTransforms, 'transform-parameters'] // This fixes an issue with transforming Angular code like `constructor(...args)`
+      : defaultAlwaysOnTransforms
+  };
+
+  if (useBuiltIns) {
+    envConfig.corejs = corejs;
+  }
+
   return {
     presets: [
       require('@babel/preset-react'),
-      [require('@babel/preset-env'), {
-        useBuiltIns,
-        corejs,
-        include: angularSupport
-          ? [...defaultAlwaysOnTransforms, 'transform-parameters'] // This fixes an issue with transforming Angular code like `constructor(...args)`
-          : defaultAlwaysOnTransforms
-      }]
+      [require('@babel/preset-env'), envConfig]
     ],
     plugins: [
       require('@babel/plugin-transform-strict-mode'),
