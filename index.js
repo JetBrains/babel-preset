@@ -1,6 +1,8 @@
 /* eslint-disable complexity */
 const MIN_BABEL_VERSION = 7;
 
+const defaultAlwaysOnTransforms = ['@babel/plugin-proposal-nullish-coalescing-operator'];
+
 module.exports = function preset(api, opts) {
   api.assertVersion(MIN_BABEL_VERSION);
 
@@ -16,8 +18,8 @@ module.exports = function preset(api, opts) {
         useBuiltIns,
         corejs,
         include: angularSupport
-          ? ['transform-parameters'] // This fixes an issue with transforming Angular code like `constructor(...args)`
-          : []
+          ? [...defaultAlwaysOnTransforms, 'transform-parameters'] // This fixes an issue with transforming Angular code like `constructor(...args)`
+          : defaultAlwaysOnTransforms
       }]
     ],
     plugins: [
