@@ -30,16 +30,6 @@ module.exports = function preset(api, opts) {
     plugins: [
       require('@babel/plugin-transform-strict-mode'),
 
-      // Non-standard transformations
-      require('@babel/plugin-proposal-class-properties'),
-      require('@babel/plugin-proposal-optional-chaining'),
-
-      /*
-      For an unknown reason preset-env doesn't transform rest spread, e.g. `const foo = {...bar.foo, test: 123}`
-      Probably because of this issue: https://github.com/babel/babel/issues/7215
-       */
-      require('@babel/plugin-proposal-object-rest-spread'),
-
       // Optional transformations
       angularSupport ? require('babel-plugin-angularjs-annotate') : null,
       transformRuntime ? require('@babel/plugin-transform-runtime') : null
