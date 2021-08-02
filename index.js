@@ -9,6 +9,7 @@ module.exports = function preset(api, opts) {
   const transformRuntime = opts.transformRuntime || false;
   const useBuiltIns = opts.useBuiltIns || false;
   const angularSupport = opts.angular || false;
+  const typeScript = opts.typeScript || false;
   const corejs = opts.corejs || '2';
 
   const envConfig = {
@@ -25,7 +26,8 @@ module.exports = function preset(api, opts) {
   return {
     presets: [
       require('@babel/preset-react'),
-      [require('@babel/preset-env'), envConfig]
+      [require('@babel/preset-env'), envConfig],
+      typeScript ? require('@babel/preset-typescript') : null
     ],
     plugins: [
       require('@babel/plugin-transform-strict-mode'),
