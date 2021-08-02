@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/JetBrains/babel-preset/compare/v2.2.5...v2.3.0) (2021-08-02)
+
+
+### Features
+
+* **[publish]:** add typeScript option ([7c35a02](https://github.com/JetBrains/babel-preset/commit/7c35a027007a9f68a0ef8d1ace41ecb997dbc1e6))
+
 ### [2.2.5](https://github.com/JetBrains/babel-preset/compare/v2.2.4...v2.2.5) (2021-06-02)
 
 ### [2.2.4](https://github.com/JetBrains/babel-preset/compare/v2.2.3...v2.2.4) (2021-06-01)
