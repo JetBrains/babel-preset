@@ -27,7 +27,9 @@ module.exports = function preset(api, opts) {
     presets: [
       require('@babel/preset-react'),
       [require('@babel/preset-env'), envConfig],
-      typeScript ? require('@babel/preset-typescript') : null
+      typeScript
+        ? [require('@babel/preset-typescript'), {allowDeclareFields: true}]
+        : null
     ].filter(it => !!it),
     plugins: [
       require('@babel/plugin-transform-strict-mode'),
