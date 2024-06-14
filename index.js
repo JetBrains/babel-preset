@@ -11,6 +11,7 @@ module.exports = function preset(api, opts) {
   const angularSupport = opts.angular || false;
   const typeScript = opts.typeScript || false;
   const corejs = opts.corejs || '2';
+  const reactConfig = opts.react;
 
   const envConfig = {
     useBuiltIns,
@@ -25,7 +26,7 @@ module.exports = function preset(api, opts) {
 
   return {
     presets: [
-      require('@babel/preset-react'),
+      [require('@babel/preset-react'), reactConfig],
       [require('@babel/preset-env'), envConfig],
       typeScript
         ? [require('@babel/preset-typescript'), {allowDeclareFields: true}]
