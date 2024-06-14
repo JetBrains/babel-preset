@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/JetBrains/babel-preset/compare/v2.3.2...v2.4.0) (2024-06-14)
+
+
+### Features
+
+* **[publish]:** allow configuring react preset ([2790dea](https://github.com/JetBrains/babel-preset/commit/2790dea012d512af1146bbc40d1183728692abc2))
+
 ### [2.3.2](https://github.com/JetBrains/babel-preset/compare/v2.3.1...v2.3.2) (2021-11-29)
 
 
